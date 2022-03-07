@@ -119,6 +119,12 @@ footer p {
     .logo {
       max-width: 25%;
     }
+
+    footer nav {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: calc(var(--white-space) * 15);
+    }
   }
   @media screen and (min-width: 1101px) {
     header {
@@ -127,6 +133,11 @@ footer p {
     }
     .logo {
       max-width: 25%;
+    }
+    footer nav {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: calc(var(--white-space) * 30);
     }
   }
 }
