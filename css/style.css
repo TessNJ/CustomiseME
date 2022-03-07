@@ -48,13 +48,29 @@ header ul {
   max-width: 33%;
 }
 ul img {
-  max-width: 70%;
+  max-width: 2rem;
 }
 
 @supports (display: grid) {
   @media screen and (min-width: 768px) and (max-width: 1100px) {
-   
-  
+    header {
+      flex-direction: row;
+      column-gap: calc(var(--white-space) * 2);
+    }
+    .logo {
+      max-width: 25%;
+    }
+    header ul {
+      justify-content: end;
+    }
+  }
   @media screen and (min-width: 1101px) {
+    header {
+      flex-direction: row;
+      column-gap: calc(var(--white-space) * 4);
+    }
+    .logo {
+      max-width: 25%;
+    }
   }
 }
