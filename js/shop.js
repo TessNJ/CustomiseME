@@ -22,6 +22,8 @@ function showSoaps(soaps) {
   //Change content
   copy.querySelector(".shop_name").textContent = soaps.Name;
   copy.querySelector(".shop_price").textContent = `${soaps.Price} DKK`;
+  copy.querySelector("img").src = soaps.img_src;
+  copy.querySelector("img").alt = soaps.img_alt;
   //Grab parent
   const parent = document.querySelector(".dynamic_content");
   //Append Child
