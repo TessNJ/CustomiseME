@@ -28,7 +28,6 @@ header {
   gap: var(--white-space);
   align-items: center;
   font-family: var(--primary-font);
-  color: var(--main-text-color);
 }
 header nav {
   width: 100%;
@@ -50,18 +49,24 @@ header ul {
 ul img {
   max-width: 2rem;
 }
+header a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+header a:hover {
+  color: var(--color-4);
+  transition: all ease 0.5s;
+}
 
 @supports (display: grid) {
   @media screen and (min-width: 768px) and (max-width: 1100px) {
     header {
       flex-direction: row;
-      column-gap: calc(var(--white-space) * 2);
+      column-gap: calc(var(--white-space) * 4);
     }
     .logo {
       max-width: 25%;
-    }
-    header ul {
-      justify-content: end;
     }
   }
   @media screen and (min-width: 1101px) {
