@@ -94,6 +94,7 @@ header li:hover {
   height: auto;
 }
 
+/*main*/
 main {
   padding: calc(var(--white-space) * 2);
 }
