@@ -21,9 +21,6 @@
 }
 
 /*header*/
-.hide {
-  display: none;
-}
 header {
   margin: var(--white-space);
   display: flex;
