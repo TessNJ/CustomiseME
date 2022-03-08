@@ -50,9 +50,7 @@ header ul {
 .logo img {
   max-width: 100%;
 }
-ul img {
-  max-width: 2rem;
-}
+
 header a {
   color: var(--main-text-color);
   text-decoration: none;
@@ -62,7 +60,13 @@ header a:hover {
   color: var(--color-4);
   transition: all ease 0.5s;
 }
-
+.cart {
+  width: 2rem;
+}
+.cart a {
+  width: 100%;
+  height: auto;
+}
 /*footer*/
 footer {
   font-family: var(--secondary-font);
@@ -117,7 +121,7 @@ footer p {
 }
 
 @supports (display: grid) {
-  @media screen and (min-width: 768px) and (max-width: 1100px) {
+  @media screen and (min-width: 768px) {
     header {
       flex-direction: row;
       column-gap: calc(var(--white-space) * 4);
@@ -125,7 +129,9 @@ footer p {
     .logo {
       max-width: 25%;
     }
-
+    header ul {
+      justify-items: end;
+    }
     footer nav {
       display: grid;
       grid-template-columns: 1.5fr 1fr;
@@ -133,16 +139,7 @@ footer p {
     }
   }
   @media screen and (min-width: 1101px) {
-    header {
-      flex-direction: row;
-      column-gap: calc(var(--white-space) * 4);
-    }
-    .logo {
-      max-width: 25%;
-    }
     footer nav {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr;
       gap: calc(var(--white-space) * 30);
     }
   }
