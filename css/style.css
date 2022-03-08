@@ -85,7 +85,8 @@ header a:hover {
 footer {
   font-family: var(--secondary-font);
   color: var(--main-text-color);
-  padding: calc(var(--white-space) * 2) var(--white-space);
+  margin: 0 calc(var(--white-space) * 2);
+  padding: calc(var(--white-space) * 2) 0;
   border-top: solid var(--main-text-color) 0.1rem;
 }
 footer nav {
