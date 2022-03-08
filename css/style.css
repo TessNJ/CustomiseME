@@ -1,6 +1,6 @@
 /*Fonts*/
 @font-face {
-  src: url(fonts/Mogan-Regular.ttf);
+  src: url(../fonts/Mogan-Regular.ttf);
   font-family: Mogan;
 }
 @import url("https://use.typekit.net/fau2fiu.css");
