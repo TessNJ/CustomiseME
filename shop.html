@@ -32,23 +32,26 @@
     </header>
 
     <main id="shop_main">
+      <h1 class="ShopPlace">See all products</h1>
       <section>
-        <nav>
-          <button>See all</button>
-          <button>Soaps</button>
-          <button>Shampoo bars</button>
-          <button>Lip-balm</button>
-          <button>Hand creme</button>
+        <nav class="categories">
+          <a href="shop.html?Category=all">See all</a>
+          <a href="shop.html?Category=Base_product">Soaps</a>
+          <a href="shop.html?Category=Shampoo">Shampoo bars</a>
+          <a href="shop.html?Category=Lip_balm">Lip-balm</a>
+          <a href="shop.html?Category=Hand_creme">Hand creme</a>
         </nav>
       </section>
-      <section>
+      <section class="dynamic_content">
         <template id="shop_template">
           <div class="overall_shopItem">
-            <div class="inner_shopItem">
-              <img />
-              <h3 class="shop_name">Name</h3>
-              <h4 class="shop_price">Price</h4>
-            </div>
+            <a href="product.html">
+              <div class="inner_shopItem">
+                <img class="shop_img" />
+                <h3 class="shop_name">Name</h3>
+                <h4 class="shop_price">Price</h4>
+              </div>
+            </a>
             <button>Add to bag</button>
           </div>
         </template>
@@ -77,6 +80,6 @@
         </div>
       </nav>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
   </body>
 </html>
