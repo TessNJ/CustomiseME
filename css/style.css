@@ -37,12 +37,13 @@
   border: none;
   border-radius: 0.6rem;
   background-color: var(--link-color);
-  padding: 1% 4%;
+  padding: 3% 4%;
   max-width: 100%;
   font-family: var(--secondary-font);
   color: var(--bg-color);
   font-style: normal;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 .categories a:hover {
   background-color: var(--link-hover-color);
@@ -318,8 +319,13 @@ b {
 @supports (display: grid) {
   .categories {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: column;
+    grid-gap: 5%;
+  }
+  .categories a {
+    padding: 4% 7%;
   }
   .dynamic_content {
     display: grid;
@@ -334,6 +340,13 @@ b {
   @media screen and (min-width: 768px) {
     .overall_shopItem button {
       padding: 3% 10%;
+    }
+    .categories {
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    .categories a {
+      padding: 1% 4%;
     }
     #product_main {
       border-radius: 2.5rem;
@@ -396,7 +409,6 @@ b {
       gap: calc(var(--white-space) * 15);
     }
   }
-
   @media screen and (min-width: 1101px) {
     #product_main {
       border-radius: 2.5rem;
@@ -425,6 +437,9 @@ b {
     }
     footer nav {
       gap: calc(var(--white-space) * 30);
+    }
+    .categories {
+      flex-direction: row;
     }
   }
 }
