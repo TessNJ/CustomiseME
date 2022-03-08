@@ -310,7 +310,52 @@ footer p {
 }
 @supports (display: grid) {
   @media screen and (min-width: 768px) and (max-width: 1100px) {
+    /*header*/
+    header {
+      flex-direction: row;
+      align-content: center;
+    }
+    .logo img {
+      max-width: 70%;
+    }
+    .topNav {
+      display: block;
+      width: 50%;
+    }
+    header nav {
+      display: block;
+    }
+    header ul {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      justify-self: end;
+    }
+    .menu {
+      display: none;
+    }
+    header ul {
+      justify-items: end;
+    }
+    header li {
+      border-radius: 1rem;
+    }
+    .cart {
+      width: 10rem;
+    }
+    /*main*/
+
+    /*footer*/
+    footer nav {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: calc(var(--white-space) * 15);
+    }
   }
   @media screen and (min-width: 1101px) {
+    /*footer*/
+    footer nav {
+      gap: calc(var(--white-space) * 30);
+    }
   }
 }
