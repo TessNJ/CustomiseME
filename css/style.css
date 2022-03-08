@@ -61,7 +61,7 @@ header ul {
   max-width: 100%;
 }
 .menu {
-  max-width: 30%;
+  max-width: 20%;
   justify-self: end;
 }
 header a {
@@ -80,6 +80,7 @@ header a:hover {
   width: 100%;
   height: auto;
 }
+
 /*footer*/
 footer {
   font-family: var(--secondary-font);
@@ -137,10 +138,27 @@ footer p {
   @media screen and (min-width: 768px) {
     header {
       flex-direction: row;
-      column-gap: calc(var(--white-space) * 4);
+      align-content: center;
     }
-    .logo {
-      max-width: 25%;
+    .logo img {
+      max-width: 70%;
+    }
+    .topNav {
+      display: block;
+      width: 50%;
+    }
+    header nav {
+      display: block;
+    }
+    header ul {
+      display: flex;
+      justify-content: end;
+      gap: calc(var(--white-space) * 2);
+      align-items: center;
+      justify-self: end;
+    }
+    .menu {
+      display: none;
     }
     header ul {
       justify-items: end;
