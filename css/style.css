@@ -21,6 +21,11 @@
 }
 
 /*Shop*/
+#shop_main h3,
+#shop_main h4 {
+  margin: 0;
+  padding-bottom: 5%;
+}
 #shop_main {
   background-color: var(--bg-color);
   color: var(--bg-color);
@@ -34,6 +39,7 @@ button {
   max-width: 100%;
   font-family: var(--secondary-font);
   color: var(--bg-color);
+  font-style: normal;
 }
 button:hover {
   background-color: var(--link-hover-color);
@@ -49,12 +55,22 @@ button:hover {
 }
 .overall_shopItem button {
   padding: 2% 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .shop_img {
   max-width: 90%;
   border-radius: 2.5rem;
   padding: 5%;
+}
+.dynamic_content a {
+  text-decoration: none;
+  color: var(--bg-color);
+}
+#shop_main h1 {
+  color: var(--main-text-color);
+  text-align: center;
 }
 
 @supports (display: grid) {

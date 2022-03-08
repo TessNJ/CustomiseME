@@ -22,9 +22,10 @@
     </header>
 
     <main id="shop_main">
+      <h1>See all products</h1>
       <section>
         <nav class="categories">
-          <button>See all</button>
+          <button href="shop.html">See all</button>
           <button>Soaps</button>
           <button>Shampoo bars</button>
           <button>Lip-balm</button>
@@ -34,11 +35,13 @@
       <section class="dynamic_content">
         <template id="shop_template">
           <div class="overall_shopItem">
-            <div class="inner_shopItem">
-              <img class="shop_img" />
-              <h3 class="shop_name">Name</h3>
-              <h4 class="shop_price">Price</h4>
-            </div>
+            <a href="product.html">
+              <div class="inner_shopItem">
+                <img class="shop_img" />
+                <h3 class="shop_name">Name</h3>
+                <h4 class="shop_price">Price</h4>
+              </div>
+            </a>
             <button>Add to bag</button>
           </div>
         </template>
