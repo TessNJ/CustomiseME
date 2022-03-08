@@ -74,7 +74,8 @@ header li {
   padding: var(--white-space);
 }
 header li:hover {
-  background-color: rgb(240, 240, 240);
+  /*background-color: rgb(240, 240, 240);*/
+  border: solid var(--main-text-color) 0.1rem;
   transition: all ease 0.5s;
 }
 .cart {
@@ -158,7 +159,6 @@ footer p {
     header ul {
       display: flex;
       justify-content: end;
-      gap: calc(var(--white-space) * 2);
       align-items: center;
       justify-self: end;
     }
@@ -167,6 +167,12 @@ footer p {
     }
     header ul {
       justify-items: end;
+    }
+    header li {
+      border-radius: 1rem;
+    }
+    .cart {
+      width: 10rem;
     }
     footer nav {
       display: grid;
