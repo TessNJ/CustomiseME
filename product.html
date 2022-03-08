@@ -8,7 +8,7 @@
     <title>Product</title>
   </head>
   <body>
-    <body>
+    <body id="product_body">
       <header>
         <h1>Logo</h1>
         <nav>
@@ -24,46 +24,59 @@
 
       <main id="product_main">
         <div>
-          <section>
-            <h1 class="singleProduct_name">Name</h1>
-            <p class="singleProduct_price">Price</p>
-            <img />
-            <div>
-              <h3>Ingrediants</h3>
-              <p>COPY INGREDIANTS</p>
+          <h1 class="singleProduct_name">Calming soap</h1>
+          <p class="singleProduct_price">DKK 55,00</p>
+          <div id="product_image">
+            <img class="single_img" />
+          </div>
+
+          <section id="product_info">
+            <div id="ingredients">
+              <h3>Ingredients</h3>
+              <p>Coconut oil*,</p>
+              <p>Olive oil*,</p>
+              <p>Shea butter*,</p>
+              <p>Distilled water</p>
             </div>
-            <div>
+
+            <div id="essential_oils">
               <h3>Essential Oils</h3>
               <p class="singleProduct_oils">Oils here</p>
             </div>
-            <div>
-              <h3>Colour</h3>
+
+            <div id="color">
+              <h3>Color</h3>
               <p class="singleProduct_colour">Colours here</p>
             </div>
-            <div>
+
+            <div id="shape">
               <h3>Shape</h3>
               <p class="singleProduct_shape">shape here</p>
             </div>
           </section>
-          Line here
-          <section>
+
+          <section id="more_info">
             <p>*Certified Organic products</p>
+
             <p>
-              Weight approx
-              <span class="singleProduct_weight">weight here</span> gr
+              Weight: approx.
+              <span class="singleProduct_weight">55</span> g
             </p>
+          </section>
+          <div id="availability">
             <p>
               Availability
               <span class="singleProduct_availability"
-                >availability here, bold</span
+                ><b>Availability here</b></span
               >
             </p>
-            <div>
-              <div>
-                <p>1</p>
-              </div>
-              <button>Add to bag</button>
+          </div>
+
+          <section id="add_to_bag">
+            <div id="amount">
+              <p>1</p>
             </div>
+            <button>ADD TO BAG</button>
           </section>
         </div>
       </main>
