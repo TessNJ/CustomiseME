@@ -44,7 +44,11 @@ header ul {
   justify-self: center;
 }*/
 .logo {
-  max-width: 33%;
+  width: 70%;
+  height: auto;
+}
+.logo img {
+  max-width: 100%;
 }
 ul img {
   max-width: 2rem;
@@ -68,8 +72,8 @@ footer {
 }
 footer nav {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
   gap: calc(var(--white-space) * 3);
+  justify-content: center;
 }
 footer h4 {
   font-size: 1rem;
@@ -79,7 +83,9 @@ footer p {
   padding: 0;
   margin: 0%;
 }
-
+.info h4 {
+  text-align: center;
+}
 .info div {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -99,7 +105,7 @@ footer p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 3fr;
-  column-gap: var(--white-space);
+  row-gap: var(--white-space);
   justify-items: center;
 }
 .social h4 {
