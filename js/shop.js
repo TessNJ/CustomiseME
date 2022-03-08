@@ -35,6 +35,18 @@ function showSoaps(soaps) {
   }
 }
 
+if (category == "Base_product") {
+  document.querySelector(".ShopPlace").textContent = `Base Products`;
+} else if (category == "Shampoo") {
+  document.querySelector(".ShopPlace").textContent = `Shampoo`;
+} else if (category == "Lip_balm") {
+  document.querySelector(".ShopPlace").textContent = `Lip Balms`;
+} else if (category == "Hand_creme") {
+  document.querySelector(".ShopPlace").textContent = `Hand Cremes`;
+} else {
+  document.querySelector(".ShopPlace").textContent = `See all products`;
+}
+
 fetch(url, options)
   .then(function (res) {
     return res.json();
