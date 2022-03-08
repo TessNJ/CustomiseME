@@ -1,0 +1,104 @@
+/*Fonts*/
+@font-face {
+  src: url(fonts/Mogan-Regular.ttf);
+  font-family: Mogan;
+}
+@import url("https://use.typekit.net/fau2fiu.css");
+
+/*Variables*/
+:root {
+  --bg-color: #ffff;
+  --link-color: #f3b3b9;
+  --link-hover-color: #a9a1ca;
+  --color-4: #97cfca;
+  --color-5: #a2c8f4;
+
+  --primary-font: Mogan, serif;
+  --secondary-font: "Agenda", sans-serif;
+  --main-text-color: #364b3e;
+
+  --white-space: 1rem;
+}
+
+/*custom page*/
+#customise_main {
+  color: var(--main-text-color);
+  font-family: var(--secondary-font);
+}
+#customise_main .topPart {
+  display: grid;
+  justify-items: center;
+}
+#customise_main h1 {
+  text-align: center;
+}
+#customise_main h1,
+#customise_main h2 {
+  font-family: var(--primary-font);
+  margin: 0;
+}
+
+#customise_main .interaction {
+  /* border: solid var(--main-text-color) 0.1rem;*/
+  aspect-ratio: 3/4;
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin: 0;
+}
+#customise_main .soap {
+  background-image: url(../assets/Illustrations/Soap-oval.svg);
+  background-size: cover;
+  aspect-ratio: 3/4;
+  width: 80%;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+  z-index: 10;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#customise_main .baseNote {
+  background-image: url(../assets/Illustrations/Ceaderwood.svg);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  width: 50%;
+  height: auto;
+  justify-self: left;
+  align-self: top;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  transform: rotate(-45deg);
+}
+#customise_main .headNote {
+  background-image: url(../assets/Illustrations/Rosemary.svg);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  width: 50%;
+  height: auto;
+  justify-self: left;
+  align-self: flex-end;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  transform: rotate(-10deg);
+}
+#customise_main .heartNote {
+  background-image: url(../assets/Illustrations/Lavender.svg);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  width: 50%;
+  height: auto;
+  justify-self: right;
+  align-self: top;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  transform: rotate(45deg);
+}
+
+@supports (display: grid) {
+  @media screen and (min-width: 768px) and (max-width: 1100px) {
+  }
+  @media screen and (min-width: 1101px) {
+  }
+}
