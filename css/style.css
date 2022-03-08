@@ -30,7 +30,7 @@
 }
 #shop_main {
   background-color: var(--bg-color);
-  color: var(--bg-color);
+  color: white;
   font-family: var(--secondary-font);
 }
 .categories a {
@@ -239,7 +239,7 @@ footer p {
 .singleProduct_price {
   text-align: center;
   font-family: var(--secondary-font);
-  font-style: bold;
+  font-weight: bold;
   color: var(--main-text-color);
 }
 
