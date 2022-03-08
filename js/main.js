@@ -13,9 +13,8 @@ function burgerMenu() {
 }
 const urlParams = new URLSearchParams(window.location.search);
 console.log(urlParams);
-// const id = urlParams.get("_id");
-let url =
-  "https://kea21a2sem-d273.restdb.io/rest/t7-soap/6221d701b55385400000e9bc";
+const id = urlParams.get("id");
+let url = "https://kea21a2sem-d273.restdb.io/rest/t7-soap/" + id;
 
 const option = {
   headers: {
