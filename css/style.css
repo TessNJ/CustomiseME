@@ -46,10 +46,10 @@
   margin-bottom: 0.5rem;
 }
 .categories a:hover,
-#index_main a:hover {
+.indexButton:hover {
   background-color: var(--link-hover-color);
 }
-#index_main a {
+.indexButton {
   text-decoration: none;
 }
 .inner_shopItem {
@@ -325,12 +325,17 @@ b {
   display: flex;
   justify-content: center;
 }
-
-.noShit {
-  background-color: white;
-  border-radius: 0;
-  position: static;
-  z-index: 1;
+.shopLinkPhone {
+  text-decoration: none;
+  text-align: center;
+  width: 50%;
+  align-self: center;
+}
+.createLinkPhone {
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+  width: 50%;
 }
 
 @supports (display: grid) {
@@ -579,7 +584,7 @@ b {
       visibility: hidden;
     }
 
-    #index_main a {
+    .indexButton {
       background-color: #f3b3b9;
       border-radius: 0.6rem;
       font-family: var(--secondary-font);
