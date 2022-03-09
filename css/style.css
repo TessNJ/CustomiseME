@@ -45,8 +45,12 @@
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
-.categories a:hover {
+.categories a:hover,
+#index_main a:hover {
   background-color: var(--link-hover-color);
+}
+#index_main a {
+  text-decoration: none;
 }
 .inner_shopItem {
   border-radius: 1.5rem;
