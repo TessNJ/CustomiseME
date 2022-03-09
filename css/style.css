@@ -329,7 +329,7 @@ b {
     z-index: 1;
   }
 
-  body {
+  #index_main body {
     margin: 0%;
   }
 
@@ -382,7 +382,7 @@ b {
     margin-left: 40%;
   }
 
-  h2 {
+  #index_main h2 {
     font-family: var(--primary-font);
     font-weight: 500;
     color: white;
@@ -517,7 +517,7 @@ b {
       left: 45%;
     }
 
-    section {
+    #index_main section {
       display: grid;
       grid-template-columns: 40% 60%;
       grid-template-rows: 42.5% 15% 42.5%;
@@ -568,7 +568,7 @@ b {
       visibility: hidden;
     }
 
-    a {
+    #index_main a {
       background-color: #f3b3b9;
       border-radius: 0.6rem;
       font-family: var(--secondary-font);
