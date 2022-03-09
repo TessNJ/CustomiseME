@@ -1,16 +1,16 @@
 //burger menu function
 
 //Event listener
-document.querySelector(".menu").addEventListener("click", burgerMenu);
-//Toggle between showing and hiding the burger menu
-function burgerMenu() {
-  var x = document.querySelector("header nav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+// document.querySelector(".menu").addEventListener("click", burgerMenu);
+// //Toggle between showing and hiding the burger menu
+// function burgerMenu() {
+//   var x = document.querySelector("header nav");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
 const urlParams = new URLSearchParams(window.location.search);
 console.log(urlParams);
 const id = urlParams.get("id");
