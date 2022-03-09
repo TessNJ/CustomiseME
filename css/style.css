@@ -85,6 +85,7 @@
 #shop_main h1 {
   color: var(--main-text-color);
   text-align: center;
+  font-family: var(--primary-font);
 }
 
 /*header*/
@@ -332,7 +333,7 @@ b {
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: space-around;
     padding: 1.5rem 2rem;
-    gap: 1%;
+    gap: 1rem;
   }
   .overall_shopItem button {
     padding: 5% 30%;
