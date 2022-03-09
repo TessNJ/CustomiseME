@@ -317,6 +317,11 @@ b {
   background-color: var(--link-hover-color);
 }
 
+#buynow {
+  display: flex;
+  justify-content: center;
+}
+
 @supports (display: grid) {
   .categories {
     display: flex;
