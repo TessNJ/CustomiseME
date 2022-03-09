@@ -234,8 +234,7 @@ form label {
 #amount {
   border: #364b3e solid 0.2rem;
   aspect-ratio: 1/1;
-  width: auto;
-  height: 100%;
+  width: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
