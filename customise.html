@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/customise.css"/>
     <title>Customisation</title>
   </head>
   <body>
@@ -33,7 +33,155 @@
       </header>
       </header>
 
-      <main id="customise_main"></main>
+      <main>
+        <div class="topPart">
+          <h1>Create Custom Soap</h1>
+          <div class="interaction">
+            <div class="soap"></div>
+            <div class="baseNote"></div>
+            <div class="headNote"></div>
+            <div class="heartNote"></div>
+          </div>
+          <div class="ingredients">
+            <h2>Ingredients</h2>
+            <p>Coconut oil*, Olive oil*, Shea butter*, Distilled water</p>
+          </div>
+          <div class="instructions">
+            <h2>Instructions</h2>
+            <p>
+              We recomment only choosing 2 essential oils per soap. This means
+              either head + heart, heart + base or base + head.
+            </p>
+            <p>Read more of the difference in the section below!</p>
+            <p>
+              Minimum order for a fully customised product is 4 bars of soap.
+            </p>
+          </div>
+
+          <form class="shape">
+            <h2>Choose a shape for your soap:</h2>
+            <input type="radio" name="shape" id="heart" />
+            <label for="heart">Heart (+ DKK 5,00)</label>
+            <input type="radio" name="shape" id="rectagular" />
+            <label for="rectangualr">Rectangular (+ DKK 5,00)</label>
+            <input type="radio" name="shape" id="round" />
+            <label for="round">Round (+ DKK 5,00)</label>
+            <input type="radio" name="shape" id="square" />
+            <label for="square">Square (+ DKK 5,00)</label>
+            <input type="radio" name="shape" id="star" />
+            <label for="star">Star (+ DKK 5,00)</label>
+            <input type="radio" name="shape" id="oval" />
+            <label for="oval">Oval (+ DKK 5,00)</label>
+            <input type="radio" name="shape" id="surprise" />
+            <label for="surprise">Surprise Us</label>
+          </form>
+
+          <form class="color">
+            <h2>Choose a color for your soap:</h2>
+            <input type="radio" name="color" id="white" />
+            <label for="white">White (+ DKK 5,00)</label>
+            <input type="radio" name="color" id="black" />
+            <label for="black">Black (+ DKK 5,00)</label>
+            <input type="radio" name="color" id="pink" />
+            <label for="pink">Pink (+ DKK 5,00)</label>
+            <input type="radio" name="color" id="lightBlue" />
+            <label for="lightBlue">Light Blue(+ DKK 5,00)</label>
+            <input type="radio" name="color" id="purple" />
+            <label for="purple">Purple (+ DKK 5,00)</label>
+            <input type="radio" name="color" id="orange" />
+            <label for="orange">Orange (+ DKK 5,00)</label>
+            <input type="radio" name="color" id="red" />
+            <label for="red">Red (+ DKK 5,00)</label>
+            <input type="radio" name="color" id="blue" />
+            <label for="blue">Blue (+ DKK 5,00)</label>
+            <input type="radio" name="color" id="yellow" />
+            <label for="yellow">Yellow (+ DKK 5,00)</label>
+            <input type="radio" name="color" id="none" />
+            <label for="none">No Color</label>
+          </form>
+        </div>
+        <div class="mainPart">
+          <article class="notesInfo">
+            <h2>Essential oils - know the difference</h2>
+            <section >
+              <h3>HEAD NOTE</h3>
+              <p>Also known as top notes, are first impression scents, the one that you smell first when you breathe in a blend. Top notes have tiny, light molecules that evaporate quickly. These top note scents are often described as cheerful, bright, light, refreshing. </p>
+            </section>
+            <section>
+              <h3>HEART NOTE</h3>
+              <p>Also known as middle notes, are scents that emerge from a blend right after the top notes have evaporated away and give perfumes their main body, their “heart,” which is why the middle note is sometimes called the ‘heart note.’ Middle notes do not evaporate as quickly as top notes and linger on the skin longer.</p>
+            </section>
+            <section>
+            <h3>BASE NOTE</h3>
+            <p>Bade describe the oils that stay with you the longest. They have heavy molecules that take much longer to evaporate. Base notes add depth and richness to a blend as well as acting as an anchor for the entire perfume. Sandalwood and Patchouli are both examples of base notes. In perfume, you smell these scents after the tops and middles have faded away and the entire blend has settled in on the skin. This is why one should always wait thirty minutes or more before they make a final decision about choosing a new perfume. The scent you spray on in the first few minutes will not be the same one you smell a half hour later.</p>
+            </section>
+          </article>
+          <div class="notes">
+            
+            <form class="head">
+              <h3>HEAD NOTES</h3>
+              <input type="radio" name="headNote" id="bergamot" />
+              <label for="bergamot">Bergamot (+ DKK 10,00)</label>
+              <input type="radio" name="headNote" id="orange" />
+              <label for="orange">Orange (+ DKK 10,00)</label>
+              <input type="radio" name="headNote" id="rosemary" />
+              <label for="rosemary">Rosemary(+ DKK 10,00)</label>
+              <input type="radio" name="headNote" id="noHead" />
+              <label for="noHead">No head note</label>
+            </form>
+            <form class="heart">
+              <h3>HEART NOTES</h3>
+              <input type="radio" name="heartNote" id="cinnamon" />
+              <label for="cinnamon">Cinnamon (+ DKK 10,00)</label>
+              <input type="radio" name="heartNote" id="ginger" />
+              <label for="ginger">Ginger (+ DKK 10,00)</label>
+              <input type="radio" name="heartNote" id="lavender" />
+              <label for="lavender">Lavender (+ DKK 10,00)</label>
+              <input type="radio" name="heartNote" id="noHeart" />
+              <label for="noHeart">No heart note</label>
+            </form>
+            <form class="heart">
+              <h3>BASE NOTES</h3>
+              <input type="radio" name="basetNote" id="cedar" />
+              <label for="cedar">Cedarwood (+ DKK 10,00)</label>
+              <input type="radio" name="basetNote" id="sandal" />
+              <label for="sandal">Sandalwood (+ DKK 10,00)</label>
+              <input type="radio" name="basetNote" id="noBase" />
+              <label for="noBase">No base note</label>
+            </form>
+          </div>
+
+        </div>
+        <div class="bottomPart">
+          <p>Although our main formulas use the above ingredients as a base, we believe that everyone has special needs and likes for its products. That is why we enjoy working with different ingredients every day.
+          </p>
+          <form class="finalComments">
+            <label for="comments">If you have any allergies, let us know here:</label>
+            <textarea name="message" placeholder="Write your message here" rows="10" cols="40" id="comments"></textarea>
+          </form>
+          <div class="report">
+           
+              <p>Product total</p>
+              <p>DKK XX,00</p>
+            
+           
+              <p>Options total</p>
+              <p>DKK XX,00</p>
+            
+         
+              <p>Grand total</p>
+              <p>DKK XX,00</p>
+           
+        
+          <section class="checkOut">
+            <div id="amount">
+              <p>1</p>
+            </div>
+            <button>ADD TO BAG</button>
+            <button>BUY NOW</button>
+          </section>
+        </div>
+      </main>
 
       <footer>
         <nav>
