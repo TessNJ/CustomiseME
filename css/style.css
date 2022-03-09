@@ -326,6 +326,13 @@ b {
   justify-content: center;
 }
 
+.noShit {
+  background-color: white;
+  border-radius: 0;
+  position: static;
+  z-index: 1;
+}
+
 @supports (display: grid) {
   .shelf {
     max-width: 100%;
