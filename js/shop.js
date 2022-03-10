@@ -36,7 +36,7 @@ function showSoaps(soaps) {
 }
 
 if (category == "Base_product") {
-  document.querySelector(".ShopPlace").textContent = `Base Products`;
+  document.querySelector(".ShopPlace").textContent = `Soaps`;
 } else if (category == "Shampoo") {
   document.querySelector(".ShopPlace").textContent = `Shampoo`;
 } else if (category == "Lip_balm") {
