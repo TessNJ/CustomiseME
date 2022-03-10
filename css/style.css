@@ -23,6 +23,10 @@
 }
 
 /*Shop*/
+body {
+  margin: 0;
+}
+
 #shop_main h3,
 #shop_main h4 {
   margin: 0;
